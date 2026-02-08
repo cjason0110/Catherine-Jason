@@ -330,7 +330,7 @@ function hideTyping() {
 }
 
 // ============================================
-// Q&A LOGIC (your full Q&A stays exactly the same)
+// Q&A LOGIC (smooth, natural, spaced answers)
 // ============================================
 
 function handleQuestion(question) {
@@ -340,7 +340,7 @@ function handleQuestion(question) {
   if (question.includes("skill") || question.includes("skills")) {
     addMessage(
       "🤖",
-      "My core skills include networking, Linux administration, Windows Server, digital forensics, SIEM analysis, and hands-on cybersecurity labs. I learn quickly when I can work with something directly, and I put everything I have into understanding how systems work. You can also ask me about my strongest qualities."
+      "My core skills include networking, Linux administration, Windows Server, digital forensics, SIEM analysis, and hands-on cybersecurity labs. I learn quickly when I can work with something directly, and I put everything I have into understanding how systems operate.<br><br><span style='opacity:0.8;'>You can also ask me about my strongest qualities.</span>"
     );
   }
 
@@ -352,7 +352,7 @@ function handleQuestion(question) {
   ) {
     addMessage(
       "🤖",
-      "I still consider myself a beginner because there is always more to learn in IT, but that is what I love about this field. At Carroll Community College, I get a lot of hands-on experience that helps me grow and build confidence. You can also ask why I chose cybersecurity."
+      "I still consider myself a beginner because there is always more to learn in IT, but that’s what I love about this field. My program gives me a lot of hands-on experience that helps me grow and build confidence.<br><br><span style='opacity:0.8;'>You can also ask why I chose cybersecurity.</span>"
     );
   }
 
@@ -363,7 +363,7 @@ function handleQuestion(question) {
   ) {
     addMessage(
       "🤖",
-      "I chose cybersecurity because I grew up around family in IT and was always amazed by how everything worked behind the scenes. Cyber fits me because I love investigating, problem solving, and doing things the right and ethical way. I want to help protect people who may not understand the risks in the digital world. You can also ask about my career goals."
+      "I chose cybersecurity because I grew up around family in IT and always loved understanding how things worked behind the scenes. Cyber fits me because I enjoy investigating, problem solving, and doing things the right and ethical way. I want to help protect people who may not understand the risks in the digital world.<br><br><span style='opacity:0.8;'>You can also ask about my career goals.</span>"
     );
   }
 
@@ -371,7 +371,7 @@ function handleQuestion(question) {
   else if (question.includes("network")) {
     addMessage(
       "🤖",
-      "I completed hands-on networking labs using Cisco routers and switches. I worked with VLANs, routing, NAT, DHCP, ACLs, and full network topologies. One of my favorite projects was building a multi-router network as a team and seeing everything come together at the end. You can also ask about my Linux experience."
+      "I’ve completed hands-on networking labs using Cisco routers and switches, working with VLANs, routing, NAT, DHCP, ACLs, and full network topologies. One of my favorite projects was building a multi‑router network as a team and seeing everything come together.<br><br><span style='opacity:0.8;'>You can also ask about my Linux experience.</span>"
     );
   }
 
@@ -379,7 +379,7 @@ function handleQuestion(question) {
   else if (question.includes("linux")) {
     addMessage(
       "🤖",
-      "In my Linux System Administration class, I worked with Ubuntu, user and permission management, SSH setup, networking, storage, and scripting. I used Vim to write scripts with loops and learned how to pull external scripts into the system. Linux helped me understand how systems operate at a deeper level. You can also ask about my Windows Server experience."
+      "In my Linux System Administration class, I worked with Ubuntu, user and permission management, SSH setup, networking, storage, and scripting. I used Vim to write scripts with loops and learned how to pull external scripts into the system. Linux helped me understand how systems operate at a deeper level.<br><br><span style='opacity:0.8;'>You can also ask about my Windows Server experience.</span>"
     );
   }
 
@@ -387,7 +387,7 @@ function handleQuestion(question) {
   else if (question.includes("windows") || question.includes("server")) {
     addMessage(
       "🤖",
-      "I worked with Windows Server in full lab environments. I practiced Active Directory, Group Policy, user accounts, permissions, and system hardening. These labs helped me understand how enterprise environments are managed and secured. You can also ask about my forensics experience."
+      "I’ve worked with Windows Server in full lab environments, practicing Active Directory, Group Policy, user accounts, permissions, and system hardening. These labs helped me understand how enterprise environments are managed and secured.<br><br><span style='opacity:0.8;'>You can also ask about my forensics experience.</span>"
     );
   }
 
@@ -395,7 +395,7 @@ function handleQuestion(question) {
   else if (question.includes("forensic") || question.includes("forensics")) {
     addMessage(
       "🤖",
-      "I completed digital forensics labs using E3, FTK Imager, OSForensics, and ProDiscover. I practiced imaging, hashing, carving, registry analysis, email analysis, and evidence handling. I enjoy forensics because it feels like solving a puzzle. You can also ask about the tools I use."
+      "I’ve completed digital forensics labs using E3, FTK Imager, OSForensics, and ProDiscover. I practiced imaging, hashing, carving, registry analysis, email analysis, and proper evidence handling. I enjoy forensics because it feels like solving a puzzle.<br><br><span style='opacity:0.8;'>You can also ask about the tools I use.</span>"
     );
   }
 
@@ -403,7 +403,7 @@ function handleQuestion(question) {
   else if (question.includes("tool") || question.includes("tools")) {
     addMessage(
       "🤖",
-      "I have used Wireshark, Nmap, SNORT, Splunk, Nessus, Metasploit, Burp Suite, Hashcat, Aircrack-ng, and Kali Linux. I feel confident using any tool because I do not give up until I understand it. You can also ask about my labs or projects."
+      "I’ve used Wireshark, Nmap, SNORT, Splunk, Nessus, Metasploit, Burp Suite, Hashcat, Aircrack‑ng, and Kali Linux. I feel confident using any tool because I don’t give up until I understand it.<br><br><span style='opacity:0.8;'>You can also ask about my labs or projects.</span>"
     );
   }
 
@@ -411,7 +411,7 @@ function handleQuestion(question) {
   else if (question.includes("lab") || question.includes("labs")) {
     addMessage(
       "🤖",
-      "My labs include networking, Linux, Windows Server, SIEM analysis, digital forensics, exploitation, and system hardening. Each lab helped me grow in a different way and understand how everything connects in IT. You can also ask about my favorite projects."
+      "My labs include networking, Linux, Windows Server, SIEM analysis, digital forensics, exploitation, and system hardening. Each lab helped me understand how everything connects in IT and strengthened my hands‑on skills.<br><br><span style='opacity:0.8;'>You can also ask about my favorite projects.</span>"
     );
   }
 
@@ -419,7 +419,7 @@ function handleQuestion(question) {
   else if (question.includes("project") || question.includes("projects")) {
     addMessage(
       "🤖",
-      "I have built networks, configured servers, completed forensic investigations, analyzed SIEM logs, and worked on ethical hacking labs. I also work on personal projects like TryHackMe, Ubuntu VMs, Packet Tracer networks, this portfolio site, and an app I hope to publish one day. You can also ask what I am most proud of."
+      "I’ve built networks, configured servers, completed forensic investigations, analyzed SIEM logs, and worked on ethical hacking labs. I also work on personal projects like TryHackMe, Ubuntu VMs, Packet Tracer networks, this portfolio site, and an app I hope to publish one day.<br><br><span style='opacity:0.8;'>You can also ask what I’m most proud of.</span>"
     );
   }
 
@@ -427,7 +427,7 @@ function handleQuestion(question) {
   else if (question.includes("strongest") || question.includes("strength")) {
     addMessage(
       "🤖",
-      "My strongest qualities are determination, problem solving, and attention to detail. I do not give up easily, and if I hit a roadblock, I find another way through it. I learn fast when I can work hands-on. You can also ask what I enjoy most in IT."
+      "My strongest qualities are determination, problem solving, and attention to detail. I don’t give up easily, and if I hit a roadblock, I find another way through it. I learn fast when I can work hands‑on and enjoy figuring out how things work.<br><br><span style='opacity:0.8;'>You can also ask what I enjoy most in IT.</span>"
     );
   }
 
@@ -435,83 +435,67 @@ function handleQuestion(question) {
   else if (question.includes("enjoy") || question.includes("like")) {
     addMessage(
       "🤖",
-      "I enjoy all areas of IT because I love understanding how things work. I especially enjoy networking, Linux, forensics, and anything that lets me investigate or build something from the ground up. You can also ask about my career goals."
+      "I enjoy all areas of IT because I like understanding how systems work behind the scenes. I’m especially drawn to networking, Linux, and forensics, and I enjoy anything that lets me investigate, build, or troubleshoot in a hands‑on way.<br><br><span style='opacity:0.8;'>You can also ask about my career goals.</span>"
     );
   }
 
-  // Goals / Career
-  else if (
-    question.includes("goal") ||
-    question.includes("career") ||
-    question.includes("role") ||
-    question.includes("future")
-  ) {
+  // Career Goals
+  else if (question.includes("goal") || question.includes("career")) {
     addMessage(
       "🤖",
-      "I am interested in becoming a SOC analyst because it exposes you to many areas of cybersecurity and helps you build a well-rounded skill set. I also enjoy networking, so that could be another direction for me. I am open to any IT role that helps me grow and find where I fit best. You can also ask how I learn best."
+      "I’m interested in becoming a SOC analyst because it exposes you to many areas of cybersecurity and helps you build a strong foundation. I also enjoy networking, so that could be another direction for me. I’m open to any IT role that helps me grow and find where I fit best.<br><br><span style='opacity:0.8;'>You can also ask how I learn best.</span>"
     );
   }
 
-  // Learning style
+  // Learning Style
   else if (question.includes("learn") || question.includes("learning")) {
     addMessage(
       "🤖",
-      "I learn best by doing. I like trying things, breaking them, fixing them, and understanding how everything works. I stay curious and always look for ways to improve. You can also ask what I am currently working on."
+      "I learn best by doing. I like trying things, breaking them, fixing them, and understanding how everything works. I stay curious and always look for ways to improve.<br><br><span style='opacity:0.8;'>You can also ask what I’m currently working on.</span>"
     );
   }
 
-  // Working on
-  else if (question.includes("work") || question.includes("working")) {
+  // What I'm Working On
+  else if (question.includes("working on") || question.includes("work on")) {
     addMessage(
       "🤖",
-      "I am working on my cybersecurity portfolio, improving my Linux and networking skills, practicing on TryHackMe, and developing an app I hope to publish. I like staying busy and always learning something new. You can also ask about my certifications."
+      "I’m working on my cybersecurity portfolio, improving my Linux and networking skills, practicing on TryHackMe, and developing an app I hope to publish. I like staying busy and always learning something new.<br><br><span style='opacity:0.8;'>You can also ask about my certifications.</span>"
     );
   }
 
   // Certifications
-  else if (
-    question.includes("cert") ||
-    question.includes("certification") ||
-    question.includes("security+") ||
-    question.includes("comptia")
-  ) {
+  else if (question.includes("cert") || question.includes("certification")) {
     addMessage(
       "🤖",
-      "I am actively studying for the CompTIA Security Plus exam and already purchased the voucher. I want to feel fully prepared before taking it. I have completed CompTIA aligned training for A Plus, Network Plus, and Security Plus through my program, which gave me a strong foundation even though I have not taken those exams yet. You can also ask about my education or training."
+      "I’m actively studying for the CompTIA Security+ exam and already purchased the voucher. I want to feel fully prepared before taking it. I’ve completed CompTIA‑aligned training for A+, Network+, and Security+, which gave me a strong foundation even though I haven’t taken those exams yet.<br><br><span style='opacity:0.8;'>You can also ask about my training or education.</span>"
     );
   }
 
   // Training
-  else if (
-    question.includes("training") ||
-    question.includes("classes") ||
-    question.includes("school") ||
-    question.includes("education")
-  ) {
+  else if (question.includes("training") || question.includes("train")) {
     addMessage(
       "🤖",
-      "I completed training aligned with A Plus, Network Plus, and Security Plus, and I also completed the BCR Cybersecurity program through Baltimore County. These programs helped me build hands-on experience across hardware, networking, security fundamentals, and real cyber scenarios. You can also ask about my interests outside of tech."
+      "I completed training aligned with A+, Network+, and Security+, and I also completed the BCR Cybersecurity program through Baltimore County. These programs helped me build hands‑on experience across hardware, networking, security fundamentals, and real cyber scenarios.<br><br><span style='opacity:0.8;'>You can also ask about my interests outside of tech.</span>"
     );
   }
 
-  // Interests outside tech
-  else if (
-    question.includes("hobby") ||
-    question.includes("interests") ||
-    question.includes("outside") ||
-    question.includes("life")
-  ) {
+  // Interests Outside Tech
+  else if (question.includes("interest") || question.includes("hobby")) {
     addMessage(
       "🤖",
-      "Outside of tech, I love being a mom. My children are my whole world, and I dedicate everything I do to giving them the best life. When I am not doing something hands-on with them, I am usually working on a project to improve my skills. I also enjoy hiking when the weather is nice. You can also ask to see my resume."
+      "Outside of tech, I love being a mom. My children are my whole world, and everything I do is for them. When I’m not doing something hands‑on with them, I’m usually working on a project to improve my skills. I also enjoy hiking when the weather is nice.<br><br><span style='opacity:0.8;'>You can also ask to see my resume.</span>"
     );
   }
 
   // Resume
-  else if (question.includes("resume") || question.includes("résumé")) {
+  else if (
+    question.includes("resume") ||
+    question.includes("résumé") ||
+    question.includes("cv")
+  ) {
     addMessage(
       "🤖",
-      "Here is my resume. <a href='Catherine_Jason_Resume.pdf' download style='color:#4a90e2;'>Download Resume</a> You can also ask me about my skills or projects."
+      "Here is my resume.<br><a href='Catherine_Jason_Resume.pdf' download style='color:#4a90e2;'>Download Resume</a><br><br>If you need any additional documentation, feel free to contact me directly.<br><br><span style='opacity:0.8;'>You can also ask me about my skills or projects.</span>"
     );
   }
 
