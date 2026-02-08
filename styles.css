@@ -1,0 +1,350 @@
+/* ============================================
+   COLOR VARIABLES (GLOBAL THEME)
+   ============================================ */
+:root {
+    --navy: #0A0F24;
+    --blue: #3A8DFF;
+    --slate: #1F2739;
+    --white: #F5F7FA;
+    --mint: #4FFFEA;
+}
+
+/* ============================================
+   GLOBAL BODY STYLING
+   ============================================ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--navy);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* ============================================
+   HEADER + NAVIGATION (CLEANED)
+   ============================================ */
+
+/* Remove old header styling — hero-header replaces it */
+/* Remove old nav styling — hero-nav replaces it */
+
+
+/* ============================================
+   HERO BANNER LAYOUT (UPGRADED)
+   ============================================ */
+
+.hero-header {
+  padding: 60px 20px;
+  background: var(--slate);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.hero-left {
+  flex-shrink: 0;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: var(--mint);
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue);
+  transition: 0.2s ease;
+}
+
+.hero-nav a:hover {
+  color: var(--mint);
+}
+
+/* Resume link styled like other nav links */
+.resume-btn {
+  background: none;
+  padding: 0;
+  color: var(--blue) !important;
+  border-radius: 0;
+}
+
+.resume-btn:hover {
+  background: none;
+  color: var(--mint) !important;
+}
+
+
+/* ============================================
+   HERO PHOTO (CIRCLE + GLOW + SHARP)
+   ============================================ */
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--mint);
+  box-shadow: 0 0 20px rgba(79, 255, 234, 0.35);
+}
+
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-nav {
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   SECTION WRAPPER
+   ============================================ */
+.section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--mint);
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 5px;
+}
+
+/* ============================================
+   GRID LAYOUT (USED FOR SKILLS + PROJECTS)
+   ============================================ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ============================================
+   CARD STYLING (SKILLS + PROJECTS)
+   ============================================ */
+.card {
+    background-color: var(--slate);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+
+    /* Subtle cyber grid pattern */
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* ============================================
+   CARD HOVER EFFECT (LIFT + GLOW)
+   ============================================ */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(79, 255, 234, 0.4);
+    background-color: #24304a;
+}
+
+/* ============================================
+   ICON STYLING + GLOW ON HOVER
+   ============================================ */
+.card h3 i {
+    color: var(--white);
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.card:hover h3 i {
+    color: var(--mint);
+    text-shadow: 0 0 8px var(--mint);
+}
+
+/* ============================================
+   PROJECT TAGS (MINI GLOW TAGS)
+   ============================================ */
+.tags {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(79, 255, 234, 0.4);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--mint);
+    transition: 0.3s ease;
+}
+
+.tags span:hover {
+    background-color: rgba(79, 255, 234, 0.15);
+    box-shadow: 0 0 10px rgba(79, 255, 234, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--slate);
+    margin-top: 40px;
+}
+/* ============================================
+   CHATBOT — CENTERED BUBBLE + CENTERED CHATBOX
+   ============================================ */
+
+/* Bubble stays centered under About Me */
+#chatbot-container {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* centers the bubble */
+  z-index: 10;
+}
+
+/* Ask Me Anything button */
+#chatbot-toggle {
+  background: #4a90e2;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Chatbox floats centered above the bubble */
+#chatbot-box {
+  position: fixed;
+  bottom: 80px; /* sits above the bubble */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 330px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 12px #4a90e2;
+  animation: slideUp 0.3s ease-out;
+  z-index: 9999;
+}
+
+/* Slide animation */
+@keyframes slideUp {
+  from { transform: translate(-50%, 20px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+/* Fully hide chatbox when minimized */
+.hidden {
+  display: none !important;
+}
+
+/* Header with minimize + theme toggle */
+#chatbot-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+#chatbot-minimize,
+#chatbot-theme-toggle {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+}
+
+#chatbot-minimize { right: 10px; }
+#chatbot-theme-toggle { left: 10px; }
+
+#chatbot-minimize:hover,
+#chatbot-theme-toggle:hover {
+  color: white;
+}
+
+/* Messages */
+#chatbot-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+/* Typing indicator */
+#chatbot-typing {
+  font-size: 12px;
+  color: #4a90e2;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+/* Input */
+#chatbot-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Light mode */
+.light-mode #chatbot-box {
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 0 12px #ffcc00;
+}
+
+.light-mode #chatbot-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.light-mode #chatbot-typing {
+  color: #ff9900;
+}
