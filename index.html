@@ -478,7 +478,7 @@ function handleQuestion(question) {
     );
     return;
   }
-  
+
 // Additional Q&A Blocks
 if (question.includes("confidence") || question.includes("improve") || question.includes("growth")) {
   addMessage(
@@ -592,6 +592,7 @@ addMessage(
   "🤖",
   "I can tell you about my networking experience, Linux skills, Windows Server labs, digital forensics work, SIEM investigations, ethical hacking practice, tools I use, projects I completed, troubleshooting style, learning approach, strengths, career goals, and more. Feel free to ask anything you want to know about my experience."
 );
+return;
 
 // Learning Style
 if (question.includes("learning style") || question.includes("learn") || question.includes("study")) {
