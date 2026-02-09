@@ -786,3 +786,15 @@ footer {
   background: #f2f2f2;
   color: black;
 }
+/* Mobile glow and tap animation */
+@media (hover: none) {
+  .card {
+    box-shadow: 0 0 15px #00ffcc;
+    transform: none;
+  }
+}
+
+.card:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 20px #00ffcc;
+}
