@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
         <div class="hero-right">
             <h1 class="hero-name">Catherine Jason</h1>
             <p class="hero-tagline">
-                Cybersecurity Student • Networking • Digital Forensics • Security Operations
+                Cybersecurity Student â€¢ Networking â€¢ Digital Forensics â€¢ Security Operations
             </p>
 
             <nav class="hero-nav">
@@ -39,7 +39,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="Catherine_Jason_Resume.pdf" download class="resume-btn">Résumé</a>
+                <a href="Catherine_Jason_Resume.pdf" download class="resume-btn">RÃ©sumÃ©</a>
             </nav>
         </div>
 
@@ -52,27 +52,27 @@
     <section id="about" class="section">
         <h2>About Me</h2>
 <p>
-    I’m Catherine Jason, a cybersecurity student pursuing an AAS in Cybersecurity with a 3.96 GPA and hands‑on experience across networking, Linux administration, Windows Server, digital forensics, scripting, and security operations. My work includes configuring Cisco Catalyst 2950, 2960 Plus, and 3560G switches; setting up Cisco 4331 routers; administering Ubuntu Server; and managing Active Directory environments. I’ve also carried out forensic investigations using tools like E3 Forensic Platform, FTK Imager, OSForensics, and ProDiscover.
+    Iâ€™m Catherine Jason, a cybersecurity student pursuing an AAS in Cybersecurity with a 3.96 GPA and handsâ€‘on experience across networking, Linux administration, Windows Server, digital forensics, scripting, and security operations. My work includes configuring Cisco Catalyst 2950, 2960 Plus, and 3560G switches; setting up Cisco 4331 routers; administering Ubuntu Server; and managing Active Directory environments. Iâ€™ve also carried out forensic investigations using tools like E3 Forensic Platform, FTK Imager, OSForensics, and ProDiscover.
     <br><br>
-    I’ve gained practical cybersecurity experience with tools including Wireshark, Nmap, SNORT, Splunk, Nessus, Metasploit, Hashcat, Aircrack‑ng, Burp Suite, and Kali Linux, along with hands‑on work in encryption, access control, and Bash scripting. My training includes the BCR Cyber Series and CompTIA‑aligned A+, Network+, and Security+ labs, which strengthened my understanding of hardware, networking, and security fundamentals through both simulator environments and real classwork.
+    Iâ€™ve gained practical cybersecurity experience with tools including Wireshark, Nmap, SNORT, Splunk, Nessus, Metasploit, Hashcat, Aircrackâ€‘ng, Burp Suite, and Kali Linux, along with handsâ€‘on work in encryption, access control, and Bash scripting. My training includes the BCR Cyber Series and CompTIAâ€‘aligned A+, Network+, and Security+ labs, which strengthened my understanding of hardware, networking, and security fundamentals through both simulator environments and real classwork.
     <br><br>
-    Outside of class, I enjoy building apps and websites in VS Code, experimenting with virtual machines, and learning through personal projects, cyber ranges, and platforms like TryHackMe. I’m driven by curiosity, problem‑solving, and continuous learning, and I’m preparing for roles in security operations, network defense, and digital forensics.
+    Outside of class, I enjoy building apps and websites in VS Code, experimenting with virtual machines, and learning through personal projects, cyber ranges, and platforms like TryHackMe. Iâ€™m driven by curiosity, problemâ€‘solving, and continuous learning, and Iâ€™m preparing for roles in security operations, network defense, and digital forensics.
 </p>
 
 <p><strong>Check out my chatbox below:</strong></p>
     </section>
 <div id="chatbot-container">
-  <button id="chatbot-toggle">💬 Ask Me Anything</button>
+  <button id="chatbot-toggle">ðŸ’¬ Ask Me Anything</button>
 
   <div id="chatbot-box" class="hidden">
     <div id="chatbot-header">
       Catherine's Chatbot
-      <span id="chatbot-minimize">–</span>
-      <span id="chatbot-theme-toggle">☀️</span>
+      <span id="chatbot-minimize">â€“</span>
+      <span id="chatbot-theme-toggle">â˜€ï¸</span>
     </div>
 
     <div id="chatbot-messages"></div>
-    <div id="chatbot-typing" class="hidden">Catherine is typing…</div>
+    <div id="chatbot-typing" class="hidden">Catherine is typingâ€¦</div>
 
     <input 
       type="text" 
@@ -114,7 +114,7 @@
             <h3><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h3>
             <ul>
                 <li>Nessus, Metasploit, Burp Suite</li>
-                <li>Hashcat, Aircrack‑ng</li>
+                <li>Hashcat, Aircrackâ€‘ng</li>
                 <li>Splunk, SIEM Analysis</li>
                 <li>Incident Response</li>
             </ul>
@@ -147,7 +147,7 @@
                 <ul>
                     <li>Configured Cisco Catalyst 2950, 2960 Plus, and 3560G switches</li>
                     <li>Deployed Cisco 4331 ISR router with routing, NAT, and DHCP</li>
-                    <li>Implemented VLAN segmentation and inter‑VLAN routing</li>
+                    <li>Implemented VLAN segmentation and interâ€‘VLAN routing</li>
                     <li>Performed packet analysis using Wireshark and SNORT</li>
                 </ul>
 
@@ -186,7 +186,7 @@
                     <li>Conducted forensic imaging using FTK Imager and OSForensics</li>
                     <li>Analyzed registry artifacts, email data, and file metadata</li>
                     <li>Performed data carving and evidence recovery</li>
-                    <li>Documented findings following chain‑of‑custody standards</li>
+                    <li>Documented findings following chainâ€‘ofâ€‘custody standards</li>
                 </ul>
 
                 <div class="tags">
@@ -250,7 +250,7 @@
          FOOTER
          ============================ -->
     <footer>
-        <p>© 2026 Catherine Jason</p>
+        <p>Â© 2026 Catherine Jason</p>
     </footer>
 
  <script>
@@ -285,7 +285,7 @@ function addMessage(sender, text) {
     </svg>
   `;
 
-  if (sender === "🤖") {
+  if (sender === "ðŸ¤–") {
     iconWrapper.classList.add("bot-icon-message");
     iconWrapper.innerHTML = botSVG;
   } else {
@@ -295,8 +295,8 @@ function addMessage(sender, text) {
 
   const bubble = document.createElement("div");
   bubble.classList.add("chat-bubble");
-  bubble.classList.add(sender === "🤖" ? "bot-bubble" : "user-bubble");
-  bubble.innerHTML = text;
+  bubble.classList.add(sender === "ðŸ¤–" ? "bot-bubble" : "user-bubble");
+  if (sender === "🤖") {`r`n  bubble.innerHTML = text;`r`n} else {`r`n  bubble.textContent = text;`r`n}
 
   row.appendChild(iconWrapper);
   row.appendChild(bubble);
@@ -427,7 +427,7 @@ const qa = [
 
 function handleQuestion(question) {
   if (!question || typeof question !== "string") {
-    addMessage("🤖", "Sorry, I did not catch that. Please ask again.");
+    addMessage("ðŸ¤–", "Sorry, I did not catch that. Please ask again.");
     return;
   }
 
@@ -442,7 +442,7 @@ function handleQuestion(question) {
     question.includes("introduction")
   ) {
     addMessage(
-      "🤖",
+      "ðŸ¤–",
       "Hi, I am Catherine. I created this chatbot to share my cybersecurity experience in a simple and interactive way. Feel free to ask about my labs, tools, projects, or anything you are curious about."
     );
     return;
@@ -451,14 +451,14 @@ function handleQuestion(question) {
   // Loop through Q&A list
   for (const item of qa) {
     if (item.keywords.some((k) => question.includes(k))) {
-      addMessage("🤖", item.answer);
+      addMessage("ðŸ¤–", item.answer);
       return;
     }
   }
 
   // Catch-all
   addMessage(
-    "🤖",
+    "ðŸ¤–",
     "I can tell you about my networking experience, systems I worked with, digital forensics labs, SIEM investigations, ethical hacking practice, tools I use, projects I completed, troubleshooting style, learning approach, strengths, weaknesses, certifications, career goals, and more. Feel free to ask anything you want to know about my experience."
   );
 }
