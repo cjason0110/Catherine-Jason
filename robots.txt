@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://catherine-jason.github.io/Catherine-Jason/sitemap.xml
+
